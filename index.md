@@ -1,4 +1,5 @@
 ---
+title: huthesh.github.io
 layout: default
 ---
 {{ page.date | date_to_long_string }}
@@ -6,4 +7,3 @@ layout: default
 # About Me
 
 This page tells you a little bit about me.
-
