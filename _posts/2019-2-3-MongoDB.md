@@ -96,3 +96,18 @@ To connect to mongo instance running at specific IP and port, we should specify 
 ```
 $mongo mongodb://192.168.0.5:27018
 ```
+## Validate connection
+On connecting to db you should see following console log
+<pre>
+MONGO:~ huthesh$ mongo
+MongoDB shell version v4.0.3
+connecting to: mongodb://127.0.0.1:27017
+Implicit session: session { "id" : UUID("*****-****-****-****-*************") }
+MongoDB server version: 4.0.3
+>
+</pre>
+Enter  command "db", this will return "test"
+```
+>db 
+test
+```
