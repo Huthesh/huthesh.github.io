@@ -27,13 +27,13 @@ $brew install mongodb
 
 ## Run Mongo Daemon 
 
-1  <b>Create Data directory</b> 
+### Create Data directory
 
 ```
 $mkdir -p /data/db
 ```
 
-2  <b>Run Mongod</b>
+### Run Mongod
 
 ```
 $mongod --dbpath <path to data directory>
