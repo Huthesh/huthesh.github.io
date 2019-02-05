@@ -2,6 +2,7 @@
 title: Change Java Version in Maven Eclipse Project
 layout: default
 description: huthesh.github.io
+categories: [Java]
 ---
 <div>
         {{ page.date | date: "%-d %B %Y" }}
