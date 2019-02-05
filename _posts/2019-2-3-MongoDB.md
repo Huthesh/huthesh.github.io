@@ -2,13 +2,16 @@
 title: MongoDB
 layout: default
 description: huthesh.github.io
-categories: [Mongodb]
+categories: [MongoDB]
 permalink: /Mongodb
 ---
 
+
+## MongoDB
+<br>
 <div class="well well-lg">
 {% for category in site.categories %}
-    {% if category[0]=="Mongodb"%}
+    {% if category[0]=="MongoDB"%}
       {% for post in category[1] %}
         {% if post.title != "MongoDB" %}
         <br>

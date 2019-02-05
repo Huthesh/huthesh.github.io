@@ -2,8 +2,13 @@
 title: Install MongoDB on Mac
 layout: default
 description: huthesh.github.io
-categories: [Mongodb]
+categories: [MongoDB]
 ---
+<ol class="breadcrumb">
+  <li><a href="/Mongodb">MongoDB</a></li>
+  <li class="active">Install MongoDB on Mac</li>
+</ol>
+
 <div>
         {{ page.date | date: "%-d %B %Y" }}
 </div>
