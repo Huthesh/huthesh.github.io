@@ -6,10 +6,11 @@ description: huthesh.github.io
 <div>
         {{ page.date | date: "%-d %B %Y" }}
 </div>
-<br>
-<br>
-This part will explain installing MongoDB and connecting to the instance through CLI
+
 ## Install on MAC using Homebrew
+
+This part will explain installing MongoDB and connecting to the instance through CLI
+
 
 Run following commands in sequence. Before running these commands make sure that Homebrew is already installed.
 

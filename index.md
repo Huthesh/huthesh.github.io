@@ -1,6 +1,7 @@
 ---
-title: huthesh.github.io
+title: About me
 layout: default
+description: huthesh.github.io
 ---
 {{ page.date | date_to_long_string }}
 

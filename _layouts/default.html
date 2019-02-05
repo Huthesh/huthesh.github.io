@@ -29,7 +29,7 @@
     <header>
       <div class="inner">
         <!-- <a href="{{ '/' | absolute_url }}"> -->
-          <h1>{{ page.title | default: site.github.repository_name }}</h1>
+          <font color="white" size="6">{{ page.title | default: site.github.repository_name }}</font>
        <!-- </a> -->
         <h2>{{ page.description | default: site.github.project_tagline }}</h2>
         {% if site.github.is_project_page %}
@@ -80,12 +80,12 @@
 
         <aside id="sidebar">
         <a href="{{ '/' | absolute_url }}">
-          <h3>About me</h3>
+          <font size="5">About me</font>
         </a>
          <ul>
   {% for post in site.posts %}
     <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <font size="3"><a href="{{ post.url }}">{{ post.title }}</a></font>
     </li>
   {% endfor %}
 </ul>
