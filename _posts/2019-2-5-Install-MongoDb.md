@@ -2,10 +2,10 @@
 title: Install MongoDB on Mac
 layout: default
 description: huthesh.github.io
-categories: [MongoDB]
+categories: [Mongodb]
 ---
 <ol class="breadcrumb">
-  <li><a href="/MongoDB">MongoDB</a></li>
+  <li><a href="/Mongodb">MongoDB</a></li>
   <li class="active">Install MongoDB on Mac</li>
 </ol>
 
