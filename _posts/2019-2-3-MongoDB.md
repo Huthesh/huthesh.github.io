@@ -3,7 +3,7 @@ title: MongoDB
 layout: default
 description: huthesh.github.io
 categories: [MongoDB]
-permalink: /Mongodb
+permalink: /MongoDB
 ---
 
 

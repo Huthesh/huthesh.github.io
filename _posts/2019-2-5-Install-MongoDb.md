@@ -5,7 +5,7 @@ description: huthesh.github.io
 categories: [MongoDB]
 ---
 <ol class="breadcrumb">
-  <li><a href="/Mongodb">MongoDB</a></li>
+  <li><a href="/MongoDB">MongoDB</a></li>
   <li class="active">Install MongoDB on Mac</li>
 </ol>
 
