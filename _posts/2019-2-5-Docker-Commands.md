@@ -14,4 +14,16 @@ categories: [Docker]
         {{ page.date | date: "%-d %B %Y" }}
 </div>
 <br>
-These are docker commands
+
+<h3>Installing docker on linux</h3>
+```
+curl -fsSL https://test.docker.com -o test-docker.sh
+```
+<h3>Controlling docker daemon</h3>
+
+```
+systemctl start|stop|restart|status docker
+```
+
+<h3>Docker engine components</h3>
+<img src="./dockerd.png">
