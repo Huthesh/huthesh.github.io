@@ -26,4 +26,4 @@ systemctl start|stop|restart|status docker
 ```
 
 <h3>Docker engine components</h3>
-<img src="./dockerd.png">
+<img  style="hight:100px;width:100px;" src="https://github.com/Huthesh/huthesh.github.io/blob/master/_posts/dockerd.png">
