@@ -22,3 +22,14 @@ git add <file to retain>
 git stash --keep-index
 git reset
 ```
+
+## Stash to branch
+
+
+```
+git stash branch <branch name>
+```
+This command will
+1. Creates a new branch with the name given
+2. Commits the changes in current branch to new branch
+3. Stash the changes in current branch
