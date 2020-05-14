@@ -35,3 +35,11 @@ This command will
   <li>Commits the changes in current branch to new branch</li>
   <li>Stash the changes in current branch</li>
 </ol>
+
+
+## Amend last commit message
+
+
+```
+git commit --amend -m "<Modified message>"
+```
