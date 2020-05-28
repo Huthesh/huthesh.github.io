@@ -47,6 +47,6 @@ git commit --amend -m "<Modified message>"
 ## Find Diff 
 
 ```
-git diff local_branch origin/branch
+git diff local_branch remote_branch
 ```
 
