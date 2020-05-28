@@ -44,9 +44,13 @@ This command will
 git commit --amend -m "<Modified message>"
 ```
 
+
 ## Find Diff 
+
 
 ```
 git diff local_branch remote_branch
 ```
+
+
 
