@@ -43,3 +43,26 @@ This command will
 ```
 git commit --amend -m "<Modified message>"
 ```
+
+## Find Diff 
+
+```
+git diff local_branch origin/branch
+
+git diff <<<<<<< Code diff unstaged files
+
+git diff --staged <<<<<<< Code diff staged files or added files. 
+
+git diff --name-only <<<<< Show only name of the files changed
+
+git diff --name-status <<<<<<< Show file name and status
+
+git diff --cached <<<<<< 
+
+git diff HEAD <<<<<<<<< Both staged and unstaged 
+
+git diff <branch> <<<<<<<<< diff of local and any branch (local or remote)
+
+git diff --stat 
+```
+
