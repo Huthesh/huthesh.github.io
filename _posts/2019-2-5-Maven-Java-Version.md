@@ -4,6 +4,8 @@ layout: default
 description: huthesh.github.io
 categories: [Java]
 ---
+<div class="container margintop">
+
 <ol class="breadcrumb">
   <li><a href="/Java">Java</a></li>
   <li class="active">Change Java Version in Maven Eclipse Project</li>
@@ -12,13 +14,17 @@ categories: [Java]
 <div>
         {{ page.date | date: "%-d %B %Y" }}
 </div>
-
-## Change Java version to 1.8 in Eclipse Maven Project
+<br>
+<h4>Change Java version to 1.8 in Eclipse Maven Project</h4>
 
 When we creare Maven Project in Eclipse, by default java version is set to 1.5. We can point to different version of java through pom.xml
 
-```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+<br>
+<br>
+<div class="well">
+<xmp>
+<project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.huthesh</groupId>
   <artifactId>Start</artifactId>
@@ -37,4 +43,6 @@ When we creare Maven Project in Eclipse, by default java version is set to 1.5. 
   	</plugins>
   </build>
 </project>
-```
+</xmp>
+</div>
+</div>

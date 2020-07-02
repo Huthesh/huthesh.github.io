@@ -2,113 +2,52 @@
 <html lang="{{ site.lang | default: "en-US" }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>huthesh.github.io</title>
-        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+        <!-- <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css"> -->
         <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
         <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="{{ '/assets/css/style2.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+        <link rel="stylesheet" href="{{ '/assets/css/style3.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
         <!-- Scrollbar Custom CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     </head>
     <body>
 
-      
-        <div class="wrapper">
-            <!-- Sidebar Holder -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>huthesh.github.io</h3>
-                </div>
-
-                <ul class="list-unstyled components">
-
-                    <li>
-                        <a href="/home">Home</a>
-                    </li>
-
-                    {% for category in site.categories %}
-                      {% if category[0]!="home" %}
-                      <li>
-                          <a href="/{{category[0]}}" >{{ category[0] }}</a>
-                      </li>
-                      {% endif %}
-                    {% endfor %}
-                    
-                    <li>
-                        <a href="{{ '/' | absolute_url }}">About</a>
-                    </li>
-                </ul>
-
-            </nav>
-
-            <!-- Page Content Holder -->
-            <div id="content">
-
-                <nav class="navbar navbar-default" >
-                    <div class="container-fluid">
-
-                        <div class="navbar-header" >
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                <i class="glyphicon glyphicon-align-left"></i>
-                                <span>Toggle Sidebar</span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    {% if site.github.is_user_page %}
-                                     <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
-                                    {% endif %}
-                                </li>
-                            </ul>
-                        </div>
+        <body id="page-top">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="/">huthesh.github.io</a>
+                    <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/#about">About</a></li>
+                        </ul>
                     </div>
-                </nav>
-
-                {{ content }}
-                
-            </div>
-
-            {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
-        </div>
-
-        <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <!-- Bootstrap Js CDN -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- jQuery Custom Scroller CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
-
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar, #content').toggleClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-            });
-        </script>
-        
-    </body>
+                </div>
+            </nav>
+           
+            {{ content }}
+          
+            <!-- Bootstrap core JS-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+            <!-- Third party plugin JS-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+            <!-- Contact form JS-->
+            <!-- <script src="assets/mail/jqBootstrapValidation.js"></script>
+            <script src="assets/mail/contact_me.js"></script> -->
+            <!-- Core theme JS-->
+            <script src="{{ '/assets/js/script.js' | append: site.github.build_revision | relative_url }}""></script>
+        </body>
 </html>
