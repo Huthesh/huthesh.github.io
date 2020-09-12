@@ -6,7 +6,7 @@ categories: [Kubernetes]
 permalink: /Kubernetes
 ---
 <div class="container margintop">
-<h1>Docker</h1>
+<h1>Kubernetes</h1>
 <br>
 <div class="well well-lg">
 {% for category in site.categories %}
